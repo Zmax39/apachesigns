@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Apache Signs</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/Logo/Standard Logo Files/Original.png">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/Logo/Standard Logo Files/Original.png" alt="Apache Signs Logo">
+      </a>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </div>
+  </header>
+
+  <nav id="nav-menu" class="nav-menu">
+    <span class="close-btn" onclick="toggleMenu()">&times;</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="services" class="content-section">
+    <div class="intro-text">
+      <h3>Projects</h3>
+    </div>
+  </section>
+
+
+  <section class="projects">
+    <div class="project-grid">
+      <a href="projects/jd.html" class="project-tile" id="project1">
+        <img src="images/jd.jpg" alt="Project 1 - JD">
+        <h3>JD Storefront</h3>
+      </a>
+
+      <a href="projects/mufc.html" class="project-tile" id="project2">
+        <img src="images/man-utd/manutd.jpg" alt="Project 2 - MAN UTD Stadium">
+        <h3>Manchester United FC</h3>
+      </a>
+
+      <a href="projects/marks-spencers.html" class="project-tile" id="project3">
+        <img src="images/mands.jpg" alt="Project 3 - M&S Store">
+        <h3>Marks & Spencers</h3>
+      </a>
+
+      <a href="projects/life-leisure.html" class="project-tile" id="project4">
+        <img src="images/life-leisure/life-leisure.JPG" alt="Project 4 - Life Leisure">
+        <h3>Life Leisure</h3>
+      </a>
+      
+    </div>
+  </section>
+
+
+  <footer>
+    <p>Copyright © Apache Signs Ltd. Company No. 15479077</p>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <span>|</span>
+    <a href="terms-conditions.html">Terms and Conditions</a>
+  </footer>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-menu');
+      nav.classList.toggle('open');
+    }
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,      // Animation duration in ms
+      once: false,         // Only animate once
+      easing: 'ease-in-out'
+    });
+  </script>
+</body>
+</html>

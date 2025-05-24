@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>About | Apache Signs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Logo/Social Media Logo Files/Favicon/Favicon Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+  <div class="page-wrapper">
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/Logo/Standard Logo Files/Original.png" alt="Apache Signs Logo">
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      </div>
+
+      <nav id="nav-menu" class="nav-menu">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-slider">
+        <div class="slide active" style="background-image: url('images/mands.jpg');"></div>
+        <div class="slide" style="background-image: url('images/jd.jpg');"></div>
+        <div class="slide" style="background-image: url('images/man-utd/utd-entrance.jpg');"></div>
+        <div class="slide" style="background-image: url('images/life-leisure/life-leisure.JPG');"></div>
+        <div class="slide" style="background-image: url('images/man-utd/utd-kit.jpg');"></div>
+  
+      <div class="hero-overlay">
+          <h1><span class="typed-text">Signs That Speak Volumes.</span></h1>
+          <br>
+          <p>Delivering impactful signage that turns heads, builds brands, and drives results.</p>
+      </div>
+    </div>
+    </header>
+
+  <section id="services" class="content-section">
+      <div class="intro-text" data-aos="fade-up">
+        <h1><span class="highlight">Signs</span> That Speak Volumes</h1>
+        <p>At Apache Signs, we don’t just make signs - we create bold, effective visual statements that leave a lasting impression. Based in Manchester, we offer end-to-end signage solutions that combine creativity, precision, and professionalism.</p>
+        <p>From consultation to installation, we handle every stage of the process with care and expertise—ensuring your brand stands out in the right way.</p>
+      </div>
+  </section>
+
+    <section id="services" class="content-section">
+      <div class="intro-text">
+        <h1>What <span class="highlight">We</span> Do:</h1>
+        <div data-aos="fade-left">
+          <h3 class="services-headers">Consultation & Design</h3>
+          <p>We work closely with you to understand your brand, goals, and space. Our team creates bespoke signage concepts that reflect your identity and connect with your audience.</p>
+        </div>
+        <div data-aos="fade-right">
+          <h3 class="services-headers">Manufacturing & Production</h3>
+          <p>Using state-of-the-art equipment and high-quality materials, we manufacture custom signs in all shapes, sizes, and finishes—with attention to detail at every step.</p>
+        </div>
+        <div data-aos="fade-left">
+          <h3 class="services-headers">Installation & Maintenance</h3>
+          <p>Our experienced fitters ensure your signage is installed safely, professionally, and with maximum visibility. We also offer ongoing maintenance to keep your signage looking sharp.</p>
+        </div>
+        <div data-aos="fade-right">
+          <h3 class="services-headers">Branding & Customisation</h3>
+          <p>Whether it’s your logo, colours, or typography, we tailor every element to maintain consistency across your signage and reinforce your brand identity.</p>
+        </div>
+        <div data-aos="fade-left">
+          <h3 class="services-headers">Permitting & Compliance</h3>
+          <p>No red tape—just results. We handle local permissions and ensure your signage meets all relevant regulations, saving you time and hassle.</p>
+        </div>
+        <div data-aos="fade-right">
+          <h3 class="services-headers">Project Management</h3>
+          <p>From idea to execution, we manage every detail of your signage project, ensuring smooth communication, on-time delivery, and exceptional results.</p>
+        </div>
+        <div data-aos="fade-left">
+          <h3 class="services-headers">Customer Support</h3>
+          <p>Our team is responsive, reliable, and ready to support you at every step. We pride ourselves on clear communication and going the extra mile for our clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="content-section">
+      <div class="intro-text">
+        <h3>Partner with <span class="highlight">Apache Signs</span> for signage that works as hard as you do.</h3>
+        <p>Let’s build something bold - <a href="mailto:info@apachesigns.co.uk" class="contact-link">contact us</a> today to get started!</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright © Apache Signs Ltd. Company No. 15479077</p>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <span>|</span>
+      <a href="terms-conditions.html">Terms and Conditions</a>
+    </footer>
+</div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-menu');
+      nav.classList.toggle('open');
+    }
+  </script>
+
+  <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 800,      // Animation duration in ms
+        once: false,         // Only animate once
+        easing: 'ease-in-out'
+    });
+    </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      function showNextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+
+      setInterval(showNextSlide, 3000);
+    });
+  </script>
+</body>
+</html>
