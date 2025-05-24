@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>MUFC | Apache Signs</title>
+  <link rel="stylesheet" href="/HTML/apache website 2.0/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/HTML/apache website 2.0/images/Logo/Social Media Logo Files/Favicon/Favicon Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    
+<div class="page-wrapper">
+
+    
+    <header>
+        <div class="container">
+          <a href="../index.html" class="logo">
+            <img src="/HTML/apache website 2.0/images/Logo/Standard Logo Files/Original.png" alt="Apache Signs Logo">
+          </a>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+
+        <nav id="nav-menu" class="nav-menu">
+            <span class="close-btn" onclick="toggleMenu()">&times;</span>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../services.html">Services</a></li>
+              <li><a href="../projects.html">Projects</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="hero-slider">
+            <div class="slide active" style="background-image: url('../images/man-utd/manutd.jpg');"></div>
+            <div class="slide" style="background-image: url('../images/man-utd/utd-entrance.jpg');"></div>
+            <div class="slide" style="background-image: url('../images/man-utd/utd-kit.jpg');"></div>
+          </div>
+      </header>
+
+      <section id="services" class="content-section">
+        <div class="intro-text">
+          <h1>We're Proud to Support Manchester United Football Club</h1>
+          <p>Your trusted partner for <span class="highlight-green">professional</span> sign services. We specialise in creating <span class="highlight-green">impactful</span> signage solutions that help businesses showcase their brand and vision.</p>
+          <p>With a team of <span class="highlight-green">highly trained</span> and experienced signage engineers, your project is in expert hands. We pride ourselves on a refined approach that consistently exceeds client expectations.</p>
+          <p>As <span class="highlight-green">specialists</span> in subcontract signage services, we make installation effortless - delivering <span class="highlight-green">seamless</span> results for your clients with zero stress.</p>
+          <p>Whether you're aiming to attract customers, control flow, or inform visitors, the right sign can make all the difference. With a wide range of solutions available, we tailor everything to your specific needs.</p>
+          <p>Get in touch today by <a href="tel:[ENTER PHONE NUMBER]" class="contact-link">phone</a> or <a href="mailto:info@apachesigns.co.uk" class="contact-link">email</a> - and let Apache Signs bring your vision to life.</p>
+        </div>
+      </section>
+
+  <footer>
+    <p>Copyright © Apache Signs Ltd. Company No. 15479077</p>
+    <a href="../privacy-policy.html">Privacy Policy</a>
+    <span>|</span>
+    <a href="../terms-conditions.html">Terms and Conditions</a>
+  </footer>
+</div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-menu');
+      nav.classList.toggle('open');
+    }
+  </script>
+
+  <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 800,      // Animation duration in ms
+        once: false,         // Only animate once
+        easing: 'ease-in-out'
+    });
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      function showNextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+
+      setInterval(showNextSlide, 3000);
+    });
+  </script>
+</body>
+</html>
