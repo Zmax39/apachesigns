@@ -614,6 +614,7 @@ header .container {
   text-align: left;
 }
 
+
 .form-group {
   margin-bottom: 1.25rem;
 }
@@ -622,6 +623,7 @@ header .container {
   display: block;
   font-weight: bold;
   margin-bottom: 0.3125rem;
+  color: #000;
 }
 
 .form-group input,
